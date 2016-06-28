@@ -9,6 +9,9 @@
 
 remove_action('wp_head', 'wp_generator');
 
+/* Disable WordPress Admin Bar for all users. */
+show_admin_bar(false);
+
 if ( ! function_exists( 'johns_work_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
