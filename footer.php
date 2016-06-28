@@ -10,17 +10,14 @@
  */
 
 ?>
-
 	</div><!-- #content -->
-
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'johns-work' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'johns-work' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'johns-work' ), 'johns-work', '<a href="http://johnswork.com" rel="designer">John Horoszewski</a>' ); ?>
-		</div><!-- .site-info -->
+		<div class="container">
+			<div class="site-info">
+				&copy;<?php echo date('Y'); ?> Johnswork.com. All Rights Reserved.
+			</div><!-- .site-info -->
+		</div>
 	</footer><!-- #colophon -->
-</div><!-- #page -->
 
 <?php wp_footer(); ?>
 
