@@ -1,0 +1,9 @@
+.jscsrc
+.jshintignore
+node_modules
+assets/*
+gulpfile.js
+package.json
+.idea/*
+.DS_store
+readme.txt
