@@ -34,7 +34,7 @@
 				<?php
 				endif; ?>
 			</div><!-- .site-branding -->
-Here I am
+
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<div class="mobile-nav">
 					<a href="#">Menu</a>

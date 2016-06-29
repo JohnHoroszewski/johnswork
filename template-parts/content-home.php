@@ -10,28 +10,49 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<div class="container">
+	<!-- <section class="hero" style="background-image:url(<?php the_field('hero_image'); ?>)"> -->
+	<section class="hero">
+		<div class="container">
+			<div class="hero-text">
+				<?php the_field('hero_text'); ?>
+			</div>
+		</div>
+	</section>
 
-		<div class="entry-content">
-			<?php
-				the_content();
-			?>
-		</div><!-- .entry-content -->
+	<section class="about">
+		<div class="container">
+			<?php the_field('bio_excerpt'); ?>
+		</div>
+	</section><!-- .entry-content -->
 
-		<?php if ( get_edit_post_link() ) : ?>
-			<footer class="entry-footer">
-				<?php
-					edit_post_link(
-						sprintf(
-							/* translators: %s: Name of current post */
-							esc_html__( 'Edit %s', 'johns-work' ),
-							the_title( '<span class="screen-reader-text">"', '"</span>', false )
-						),
-						'<span class="edit-link">',
-						'</span>'
-					);
-				?>
-			</footer><!-- .entry-footer -->
-		<?php endif; ?>
-	</div>
+	<section class="skills">
+		<div class="container">
+			<h2>Skills and Interests</h2>
+		</div>
+	</section>
+
+	<section class="cta">
+		<div class="container">
+			<h2>Find Me Here</h2>
+		</div>
+	</section>
+
+	<section class="work">
+		<div class="container">
+			<h2 class="accent">Work</h2>
+			<section class="dev">
+				<h3 class="accent light">Development</h3>
+			</section>
+			<section class="design">
+				<h3 class="accent light">Design</h3>
+			</section>
+		</div>
+	</section>
+
+	<section class="contact">
+		<div class="container">
+			<h2>Contact Me</h2>
+		</div>
+	</section>
+
 </article><!-- #post-## -->

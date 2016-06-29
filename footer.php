@@ -14,7 +14,7 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="container">
 			<div class="site-info">
-				&copy;<?php echo date('Y'); ?> Johnswork.com. All Rights Reserved.
+				Johnswork.com &copy;<?php echo date('Y'); ?> John Horoszewski. All Rights Reserved.
 			</div><!-- .site-info -->
 		</div>
 	</footer><!-- #colophon -->
