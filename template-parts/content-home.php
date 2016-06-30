@@ -20,7 +20,9 @@
 
 	<section class="about">
 		<div class="container">
-			<?php the_field('bio_excerpt'); ?>
+			<span class="md-text">
+				<?php the_field('bio_excerpt'); ?>
+			</span>
 		</div>
 	</section><!-- .entry-content -->
 	<section class="skills">
@@ -37,9 +39,14 @@
 		</div>
 	</section>
 
-	<section class="cta">
+	<section class="cta-one">
 		<div class="container">
-			<h2>Find Me Here</h2>
+			<p class="lrg-text">
+				<?php the_field('cta_text'); ?>
+			</p>
+			<a href="/contact" class="button cta-button">
+				<?php the_field('cta_button_text'); ?>
+			</a>
 		</div>
 	</section>
 
@@ -52,12 +59,6 @@
 			<div class="design">
 				<h3 class="accent light">Design</h3>
 			</div>
-		</div>
-	</section>
-
-	<section class="contact">
-		<div class="container">
-			<h2>Contact Me</h2>
 		</div>
 	</section>
 
