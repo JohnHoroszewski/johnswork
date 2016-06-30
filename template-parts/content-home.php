@@ -10,7 +10,6 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<!-- <section class="hero" style="background-image:url(<?php the_field('hero_image'); ?>)"> -->
 	<section class="hero">
 		<div class="container">
 			<div class="hero-text">
@@ -24,10 +23,17 @@
 			<?php the_field('bio_excerpt'); ?>
 		</div>
 	</section><!-- .entry-content -->
-
 	<section class="skills">
 		<div class="container">
-			<h2>Skills and Interests</h2>
+			<h2>Skills and Specialities</h2>
+			<div class="dev">
+				<h3>Development</h3>
+				<?php the_field('skills_dev'); ?>
+			</div>
+			<div class="design">
+				<h3>Design</h3>
+				<?php the_field('skills_design'); ?>
+			</div>
 		</div>
 	</section>
 
@@ -40,12 +46,12 @@
 	<section class="work">
 		<div class="container">
 			<h2 class="accent">Work</h2>
-			<section class="dev">
+			<div class="dev">
 				<h3 class="accent light">Development</h3>
-			</section>
-			<section class="design">
+			</div>
+			<div class="design">
 				<h3 class="accent light">Design</h3>
-			</section>
+			</div>
 		</div>
 	</section>
 
