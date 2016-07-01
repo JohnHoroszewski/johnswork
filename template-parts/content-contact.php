@@ -40,6 +40,9 @@
 							<?php if (get_field('pinterest_link')) : ?>
 								<li class="pinterest social-contact"><a href="<?php the_field('pinterest_link'); ?>">Pintrest</a></li>
 							<?php endif; ?>
+							<?php if (get_field('linkedin_link')) : ?>
+								<li class="linkedin social-contact"><a href="<?php the_field('linkedin_link'); ?>">Linkedin</a></li>
+							<?php endif; ?>
 						</ul>
 					</div>
 				</div>
