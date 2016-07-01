@@ -11,7 +11,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<div class="container">
-			<section>
+			<section class="contact-wrapper">
 				<div class="links">
 					<div class="contact-intro">
 						<h1>Contact Me</h1>
