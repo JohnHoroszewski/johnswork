@@ -41,9 +41,10 @@
 
 	<section class="cta-one">
 		<div class="container">
-			<p class="lrg-text">
+			<div class="lrg-text">
 				<?php the_field('cta_text'); ?>
-			</p>
+			</div>
+			<span class="arrow"><i class="fa fa-long-arrow-right fa-3x" aria-hidden="true"></i></span>
 			<a href="/contact" class="button cta-button">
 				<?php the_field('cta_button_text'); ?>
 			</a>
