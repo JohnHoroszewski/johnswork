@@ -10,69 +10,45 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-	<section class="contact-me">
 		<div class="container">
-			<section class="links">
-				<div class="connect">
-					<h3>Connect with Me @</h3>
+			<section>
+				<div class="links">
+					<div class="contact-intro">
+						<h1>Contact Me</h1>
+						<p>
+							<?php the_field('contact_text'); ?>
+						</p>
+					</div>
+					<div class="find-me">
+						<h2>Connect with me @</h2>
+						<ul class="social-links-contact">
+							<?php if (get_field('twitter_link')) : ?>
+								<li class="twitter social-contact"><a href="<?php the_field('twitter_link'); ?>">Twitter</a></li>
+							<?php endif; ?>
+							<?php if (get_field('behance_link')) : ?>
+								<li class="behance social-contact"><a href="<?php the_field('behance_link'); ?>">Behance</a></li>
+							<?php endif; ?>
+							<?php if (get_field('dribbble_link')) : ?>
+								<li class="dribbble social-contact"><a href="<?php the_field('dribbble_link'); ?>">Dribbble</a></li>
+							<?php endif; ?>
+							<?php if (get_field('google_plus_link')) : ?>
+								<li class="google-plus social-contact"><a href="<?php the_field('google_plus_link'); ?>">Google Plus</a></li>
+							<?php endif; ?>
+							<?php if (get_field('facebook_link')) : ?>
+								<li class="facebook social-contact"><a href="<?php the_field('facebook_link'); ?>">Facebook</a></li>
+							<?php endif; ?>
+							<?php if (get_field('pinterest_link')) : ?>
+								<li class="pinterest social-contact"><a href="<?php the_field('pinterest_link'); ?>">Pintrest</a></li>
+							<?php endif; ?>
+						</ul>
+					</div>
 				</div>
-				<div class="find-me">
-					<h3>Find Me @</h3>
-				</div>
-			</section>
-			<section class="contact-form">
-				<?php $contact = get_field('contact_form');
-						echo do_shortcode($contact);
-				?>
-			</section>
-		</div>
-	</section>
-
-	<hr class="divider">
-
-	<section class="address">
-		<div class="container">
-			<section class="my-info">
-				<h3>Where I Live</h3>
-				<span class="address">
-					<?php the_field('street_address'); ?>
-				</span>
-				<span class="address">
-					<?php the_field('city'); ?>
-				</span>
-				<span class="address">
-					<?php the_field('state'); ?>
-				</span>
-				<span class="address">
-					<?php the_field('zip_code'); ?>
-				</span>
-				<span class="address">
-					<script type="text/javascript">
-						//OBFUS Ph.No.
-					//<![CDATA[
-					<!--
-						var x="function f(x){var i,o=\"\",l=x.length;for(i=0;i<l;i+=2) {if(i+1<l)o+=" +
-							"x.charAt(i+1);try{o+=x.charAt(i);}catch(e){}}return o;}f(\"ufcnitnof x({)av" +
-							" r,i=o\\\"\\\"o,=l.xelgnhtl,o=;lhwli(e.xhcraoCedtAl(1/)3=!88{)rt{y+xx=l;=+;" +
-							"lc}tahce({)}}of(r=i-l;1>i0=i;--{)+ox=c.ahAr(t)i};erutnro s.buts(r,0lo;)f}\\" +
-							"\"(9),6\\\"\\\\\\\\\\\\\\\\\\\\^VAMPPoXksijkw`k}t?:%7=9c9%8$/$=!)\\\"\\\\f(" +
-							";} ornture;}))++(y)^(iAtdeCoarchx.e(odrChamCro.fngriSt+=;o27=1y%2;*=)yy)9+(" +
-							"6i>f({i+)i+l;i<0;i=r(foh;gten.l=x,l\\\"\\\\\\\"\\\\o=i,r va){,y(x fontincfu" +
-							")\\\"\")"                                                                    ;
-						while(x=eval(x));
-					//-->
-					//]]>
-					</script>
-				</span>
-			</section>
-
-			<section class="gmap">
-				<div class="map-wrapper">
-					<?php the_field('google_map'); ?>
+				<div class="contact-form">
+					<?php $contact = get_field('contact_form');
+							echo do_shortcode($contact);
+					?>
 				</div>
 			</section>
 		</div>
-	</section>
 
-</article><!-- #post-## -->
+</article>
