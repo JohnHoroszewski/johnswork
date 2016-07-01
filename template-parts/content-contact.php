@@ -23,25 +23,25 @@
 						<h2>Connect with me @</h2>
 						<ul class="social-links-contact">
 							<?php if (get_field('twitter_link')) : ?>
-								<li class="twitter social-contact"><a href="<?php the_field('twitter_link'); ?>">Twitter</a></li>
+								<li ><a class="twitter social-contact" href="<?php the_field('twitter_link'); ?>"></a></li>
 							<?php endif; ?>
 							<?php if (get_field('behance_link')) : ?>
-								<li class="behance social-contact"><a href="<?php the_field('behance_link'); ?>">Behance</a></li>
+								<li><a class="behance social-contact" href="<?php the_field('behance_link'); ?>"></a></li>
 							<?php endif; ?>
 							<?php if (get_field('dribbble_link')) : ?>
-								<li class="dribbble social-contact"><a href="<?php the_field('dribbble_link'); ?>">Dribbble</a></li>
+								<li><a class="dribbble social-contact" href="<?php the_field('dribbble_link'); ?>"></a></li>
 							<?php endif; ?>
 							<?php if (get_field('google_plus_link')) : ?>
-								<li class="google-plus social-contact"><a href="<?php the_field('google_plus_link'); ?>">Google Plus</a></li>
+								<li><a class="google-plus social-contact" href="<?php the_field('google_plus_link'); ?>"></a></li>
 							<?php endif; ?>
 							<?php if (get_field('facebook_link')) : ?>
-								<li class="facebook social-contact"><a href="<?php the_field('facebook_link'); ?>">Facebook</a></li>
+								<li><a class="facebook social-contact" href="<?php the_field('facebook_link'); ?>"></a></li>
 							<?php endif; ?>
 							<?php if (get_field('pinterest_link')) : ?>
-								<li class="pinterest social-contact"><a href="<?php the_field('pinterest_link'); ?>">Pintrest</a></li>
+								<li><a class="pinterest social-contact" href="<?php the_field('pinterest_link'); ?>"></a></li>
 							<?php endif; ?>
 							<?php if (get_field('linkedin_link')) : ?>
-								<li class="linkedin social-contact"><a href="<?php the_field('linkedin_link'); ?>">Linkedin</a></li>
+								<li><a class="linkedin social-contact" href="<?php the_field('linkedin_link'); ?>"></a></li>
 							<?php endif; ?>
 						</ul>
 					</div>
