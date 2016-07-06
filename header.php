@@ -21,7 +21,10 @@
 <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body id="top" <?php body_class(); ?>>
+<a href="#top" class="backtotop">
+	Back To Top
+</a>
 	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'johns-work' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
