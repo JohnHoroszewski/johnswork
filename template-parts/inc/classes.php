@@ -1,5 +1,17 @@
 <?php
 
+/**
+ *
+ * Work Items Loop
+ **
+ * @copyright 2016 johnswork.com
+ *
+ * Utilize a common loop based on the $temp and $count variables passed
+ * to the loop function.
+ * Outputs list of items based on passed variables for work type items
+ *
+ */
+
     class workLoop {
 
         public function loop( $temp, $count) {
@@ -60,5 +72,4 @@
             wp_reset_query(); // Reset the Query
 
         }
-
     }

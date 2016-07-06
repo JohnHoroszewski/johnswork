@@ -15,7 +15,7 @@
 				<div class="links">
 					<div class="contact-intro">
 						<h1>Contact Me</h1>
-						<p>
+						<p class="md-text">
 							<?php the_field('contact_text'); ?>
 						</p>
 					</div>

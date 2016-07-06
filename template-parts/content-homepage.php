@@ -55,7 +55,7 @@
 
 	<section class="work">
 		<div class="container">
-			<h2 class="accent">Work</h2>
+			<h2 class="accent">Recent Work</h2>
 			<div class="dev">
 				<h3 class="accent light wide-left">Development</h3>
 				<?php
