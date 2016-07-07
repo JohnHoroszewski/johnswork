@@ -10,7 +10,7 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<div class="container">
+		<div class="container posts-container">
 		<?php
 		if ( have_posts() ) : ?>
 
@@ -40,10 +40,10 @@ get_header(); ?>
 
 			get_template_part( 'template-parts/content', 'none' );
 
+			get_sidebar();
 		endif; ?>
 
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();

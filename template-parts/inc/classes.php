@@ -50,7 +50,7 @@
                     {
                         echo '<a href="' . get_field('client_website_link') . '" target="_blank">';
                     } else {
-                        echo '<a href="' . get_the_permalink() . '" target="_blank">';
+                        echo '<a href="' . get_the_permalink() . '">';
                     }
 
                     echo '<span class="view-info">View<i class="fa fa-plus-circle" aria-hidden="true"></i></span>';
