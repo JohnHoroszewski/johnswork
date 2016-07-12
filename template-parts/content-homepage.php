@@ -47,7 +47,7 @@
 				<?php the_field('cta_text'); ?>
 			</div>
 			<span class="arrow"><i class="fa fa-long-arrow-right fa-3x" aria-hidden="true"></i></span>
-			<a href="http://www.johnswork.com/wp-content/uploads/2016/07/John-Horoszewski-Resume-2016.pdf" class="button cta-button" target="_blank">
+			<a href="http://www.johnswork.com/wp-content/uploads/2016/07/John-Horoszewski-Resume-2016.pdf" class="button cta-button white" target="_blank">
 				<?php the_field('cta_button_text'); ?>
 			</a>
 		</div>
@@ -62,6 +62,7 @@
 					$dev = new workLoop();
 					$dev->loop('dev', 2);
 				?>
+				<a href="/development-portfolio/" class="button cta-button orange">More Development</a>
 			</div>
 
 			<div class="design">
@@ -70,6 +71,7 @@
 					$des = new workLoop();
 					$des->loop('des', 2);
 				?>
+				<a href="/design-portfolio/" class="button cta-button orange">More Design</a>
 			</div>
 		</div>
 	</section>
