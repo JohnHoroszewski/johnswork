@@ -40,7 +40,7 @@
 			<div class="share-it"> <!-- Social Shares -->
 				Share this:
 				<a href="http://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>&title=<?php the_title(); ?>"  class="facebook" target="_blank"></a>
-				<a href="http://twitter.com/share?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>&via=pixel_visions" class="twitter" target="_blank"></a>
+				<a href="http://twitter.com/share?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>&via=JHoroszewski" class="twitter" target="_blank"></a>
 				<a href="https://plus.google.com/share?url=<?php the_permalink(); ?>title=<?php the_title(); ?>"  class="google-plus" target="_blank"></a>
 			</div>
 		<?php the_content( sprintf(

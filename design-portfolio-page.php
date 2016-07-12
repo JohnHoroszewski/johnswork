@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Development Items
+ * Template Name: Design Portfolio
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -12,6 +12,7 @@
  * @package Johns_Work
  */
 
+
 get_header(); ?>
 
 	<div id="primary" class="content-area">
@@ -20,7 +21,7 @@ get_header(); ?>
 			<?php
 			while ( have_posts() ) : the_post();
 
-				get_template_part( 'template-parts/content', 'development' );
+				get_template_part( 'template-parts/content', 'design-portfolio' );
 
 				// If comments are open or we have at least one comment, load up the comment template.
 				if ( comments_open() || get_comments_number() ) :

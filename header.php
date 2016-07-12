@@ -26,8 +26,12 @@
 </head>
 
 <body id="top" <?php body_class(); ?>>
+<script type="text/javascript">
+	if( navigator.userAgent.match(/iP(hone|od|ad)/i) ) {
+		jQuery('body').addClass('ios');
+	}
+</script>
 <a href="#top" class="backtotop">
-	Back To Top
 </a>
 	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'johns-work' ); ?></a>
 
