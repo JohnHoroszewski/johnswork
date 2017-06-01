@@ -47,7 +47,7 @@
 				<?php the_field('cta_text'); ?>
 			</div>
 			<span class="arrow"><i class="fa fa-long-arrow-right fa-3x" aria-hidden="true"></i></span>
-			<a href="http://www.johnswork.com/wp-content/uploads/2016/07/John-Horoszewski-Resume-2016.pdf" class="button cta-button white" target="_blank">
+			<a href="http://www.johnswork.com/wp-content/uploads/2017/06/John-Horoszewski-Resume-2017.pdf" class="button cta-button white" target="_blank">
 				<?php the_field('cta_button_text'); ?>
 			</a>
 		</div>
